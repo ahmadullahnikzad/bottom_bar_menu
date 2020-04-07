@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/b7655a4376.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body class="theme">
+    <ul>
+        <li onclick="openmenu()">
+            <a href="#home"><i class="fa fa-home"></i></a>
+        </li>
+        <li onclick="opensearch()">
+            <a href="#home"><i class="fa fa-search"></i></a>
+        </li>
+        <li onclick="opensettings()">
+            <a href="#home"><i class=" fa fa-cog"></i></a>
+        </li>
+    </ul>
+    <div class="home ">
+        <a href="#home ">HTML</a>
+        <a href="#home ">CSS</a>
+    </div>
+    <div class="search ">
+        <input type="search " name="search " id="search " placeholder="search ">
+    </div>
+    <div class="settings ">
+        <a href="#home "><i class="fa fa-sun-o "></i></a>
+        <a href="#home "><i class="fa fa-font "></i></a>
+    </div>
+    <script>
+        function openmenu() {
+            document.querySelector('.home').classList.toggle('togglemenu');
+        }
+
+        function opensearch() {
+            document.querySelector('.search').classList.toggle('togglesearch');
+        }
+
+        function opensettings() {
+            document.querySelector('.settings').classList.toggle('togglesettings');
+        }
+    </script>
+</body>
+
+</html>
